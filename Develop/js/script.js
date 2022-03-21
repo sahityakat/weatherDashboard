@@ -47,7 +47,7 @@ searchButton.addEventListener("click",function(){
 // Two Api Calls - geo->to get lat,long; onecall->to get current and 5 day forecast data
 function fireApi(city) {
     // Geo Api Call
-    fetch("http://api.openweathermap.org/geo/1.0/direct?q="+city+"&limit=5&appid="+apiKey)
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q="+city+"&limit=5&appid="+apiKey)
     .then(function(response){
         return response.json();
     })
