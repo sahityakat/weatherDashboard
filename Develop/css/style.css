@@ -1,0 +1,35 @@
+.container {
+    margin:3px;
+    max-width:100%;
+}
+
+header h1 {
+    background-color: blue;
+    text-align: center;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.searchCls h2 {
+    margin:5px;
+}
+.detailCls {
+    border: 1px solid black;
+    margin:15px;
+    padding:5px;
+}
+
+.forecastCls {
+    margin:15px;
+}
+
+#inputCity {
+    width:100%;
+    /* margin:5px; */
+}
+#searchButton {
+    margin-top:10px;  
+    margin-bottom:25px;  
+    width:100%;
+    border-radius: 1px;
+}

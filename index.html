@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Develop/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+
+    <!--Header Section-->
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <!--Main container-->
+    <div class="container">
+        <div class="row">
+
+            <!--Search Class on the left to search for city and show previously searched cities-->
+            <div class="col-4 searchCls">
+                <h2>Search for a City:</h2>
+                <input type="text" placeholder="San Diego" id="inputCity"/>
+                <div>
+                    <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+                </div>            
+                <div class="storedSearch" id="storedSearch"></div>
+            </div>
+
+            <!--Current day weather and 5 day forecast-->
+            <div class="col-8 weatherCls" id="weatherCls">
+                <div class="detailCls">
+                    <h3 id="cityName"></h3>
+                    <p>
+                        <img id="currentWeatherIcon"/>
+                    </p>
+                    <p id="currentTemp"></p>
+                    <p id="currentWind"></p>
+                    <p id="currentHumid"></p>
+                    <p id="currentUV">
+                        UV Index: <span class="badge badge-secondary" id="uvIndex"></span>
+                    </p>
+                </div>
+                <div class="forecastCls">
+                    <h3><b>5-Day Forecast:</b></h3>
+                    <div class="container" id="container">
+                        <div class="row" id="fiveDayDiv">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script src="./Develop/js/script.js"></script>
+  </body>
+  </html>
